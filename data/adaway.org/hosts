@@ -2025,9 +2025,6 @@
 127.0.0.1 appleads-trk.com
 127.0.0.1 redirect.appleads-trk.com
 
-# [applicaster.com]
-127.0.0.1 assets-secure.applicaster.com
-
 # [applifier.com]
 127.0.0.1 impact.applifier.com
 
@@ -3281,9 +3278,6 @@
 127.0.0.1 api.cloudmobi.net
 127.0.0.1 logger.cloudmobi.net
 
-# [cludo.com]
-127.0.0.1 customer.cludo.com
-
 # [cluep.com]
 127.0.0.1 cas.cluep.com
 127.0.0.1 dev-as.cluep.com
@@ -3473,9 +3467,6 @@
 # [cordial.com]
 127.0.0.1 events-stream-svc.usw2.cordial.com
 127.0.0.1 message-hub-svc.usw2.cordial.com
-
-# [coremedia.cloud]
-127.0.0.1 sitegenesis.production.deckers.coremedia.cloud
 
 # [coremetrics.com]
 127.0.0.1 coremetrics.com
@@ -4199,7 +4190,6 @@
 127.0.0.1 v1.addthisedge.com.edgekey.net
 127.0.0.1 adobetag.com.edgekey.net
 127.0.0.1 san-www.adobetag.com.edgekey.net
-127.0.0.1 api.agoda.com.edgekey.net
 127.0.0.1 aniview.com.edgekey.net
 127.0.0.1 wildcard.aniview.com.edgekey.net
 127.0.0.1 wl.aniview.com.edgekey.net
@@ -4374,11 +4364,6 @@
 
 # [wpsconfig4svr.elasticbeanstalk.com]
 127.0.0.1 wpsconfig4svr.elasticbeanstalk.com
-
-# [emarsys.net]
-127.0.0.1 assets.emarsys.net
-127.0.0.1 me-client.eservice.emarsys.net
-127.0.0.1 mobile-sdk-config.gservice.emarsys.net
 
 # [emb-api.com]
 127.0.0.1 config.emb-api.com

@@ -40,7 +40,7 @@ def main():
         if key == "base":
             data[key]["description"] = "Unified hosts = **(adware + malware)**"
         else:
-            if data[key]["no_unified_hosts"]:
+            if data[key]["nounifiedhosts"]:
                 data[key]["description"] = (
                     "**" + key.replace("-only", "").replace("-", " + ") + "**"
                 )
@@ -71,7 +71,7 @@ def main():
     for key in keys:
         extensions = key.replace("-only", "").replace("-", ", ")
         extensions_str = "* Extensions: **" + extensions + "**."
-        if data[key]["no_unified_hosts"]:
+        if data[key]["nounifiedhosts"]:
             extensions_header = "Limited to the extensions: " + extensions
         else:
             extensions_header = "Unified hosts file with " + extensions + " extensions"
@@ -90,8 +90,10 @@ def main():
             "wt",
             encoding="utf-8",
             newline="\n",
-        ) as out:
-            for line in open(README_TEMPLATE, encoding="utf-8", newline="\n"):
+        ) as out, open(
+            README_TEMPLATE, encoding="utf-8", newline="\n"
+        ) as template:
+            for line in template:
                 line = line.replace(
                     "@GEN_DATE@", time.strftime("%B %d %Y", time.gmtime())
                 )
@@ -111,7 +113,8 @@ def main():
                         "@SIZEHISTORY@", size_history_graph
                     )
                 else:
-                    line = line.replace("@SIZEHISTORY@", "")
+                    line = line.replace(
+                        "@SIZEHISTORY@", "![Size history](stats.png)")
 
                 out.write(line)
 
